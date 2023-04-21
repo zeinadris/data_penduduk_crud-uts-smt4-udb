@@ -7,6 +7,8 @@
     <title>Ubah Data Penduduk</title>
 </head>
 <body>
+@extends('template')
+@section('content')
     <h1>Halaman Ubah Data  Penduduk</h1>
 
     <a href="/index" class="btn btn-warning">Kembali</a>
@@ -69,5 +71,6 @@
     <input type="submit" value="Simpan Data" class="btn btn-primary">
 </form>
 @endforeach
+@endsection
 </body>
 </html>

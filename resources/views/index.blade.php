@@ -7,6 +7,8 @@
     <title>Data Penduduk</title>
 </head>
 <body>
+@extends('template')
+@section('content')
     <h2>Data Penduduk Uganda</h2>
 
     <a href="/insert" class="btn btn-info my-3"> + Penduduk Baru</a>
@@ -23,6 +25,7 @@
                 <th>Tanggal Lahir</th>
                 <th>Agama</th>
                 <th>Pendidikan</th>
+                <th>Opsi</th>
             </tr>
         </thead>
             @foreach ($data as  $kependudukan)
@@ -44,5 +47,6 @@
             </tr>
             @endforeach
         </table>
+        @endsection
 </body>
 </html>
