@@ -11,7 +11,7 @@
 
     <a href="/insert" class="btn btn-info my-3"> + Penduduk Baru</a>
         <a href="/index/print_pdf" target="_blank" class="btn btn-warning my-3">CETAK PDF</a>
-        <a href="/mahasiswa/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
+        <a href="/index/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
 
         <table border='2' class="table table-bordered table-hover table-striped">
             <thead class="bg-success">

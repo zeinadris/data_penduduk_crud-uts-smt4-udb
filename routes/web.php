@@ -34,3 +34,8 @@ Route::post('/index/ubah', [KependudukanController::class, 'ubah']);
 Route::get('/delete/{nik}', [KependudukanController::class, 'delete']);
 
 Route::get('index/print_pdf', [KependudukanController::class, 'print_pdf']);
+
+Route::get('index/export_excel', [KependudukanController::class, 'export_excel']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

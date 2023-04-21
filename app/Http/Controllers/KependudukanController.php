@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Models\Kependudukan;
 
+use App\Exports\KependudukanExport;
+
+use Maatwebsite\Excel\Facades\Excel;
+
 use DB;
 use PDF;
 
@@ -83,5 +87,9 @@ class KependudukanController extends Controller
 
         $pdf = PDF::loadview('pdf',['data'=>$data]);
         return $pdf->download('laporan-data-penduduk.pdf');
+    }
+
+    public function export_excel(){
+        return Excel::download(new KependudukanExport, 'data-kependudukan.xlsx');
     }
 }
