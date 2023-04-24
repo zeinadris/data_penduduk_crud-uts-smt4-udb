@@ -9,7 +9,7 @@
 <body>
 @extends('template')
 @section('content')
-    <h2>Data Penduduk Uganda</h2>
+    <h2>Data Penduduk Republik Irlandia</h2>
 
     <a href="/insert" class="btn btn-info my-3"> + Penduduk Baru</a>
         <a href="/index/print_pdf" target="_blank" class="btn btn-warning my-3">CETAK PDF</a>

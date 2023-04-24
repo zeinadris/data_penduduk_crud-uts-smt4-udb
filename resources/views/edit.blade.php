@@ -17,32 +17,29 @@
 @foreach($data as $kependudukan)
 <form action="/index/ubah" method="post">
     {{ csrf_field() }}
-    <table>
-        <tr>
-            <td>NIK : </td>
-            <td><input type="text" name="nik" require="require" value="{{ $kependudukan->nik }}"></td>
-        </tr>
-        <tr>
-            <td>Nama : </td>
-            <td><input type="text" name="nama" require="require"></td>
-        </tr>
-        <tr>
-            <td>Alamat : </td>
-            <td><input type="text" name="alamat" require="require"></td>
-        </tr>
-        <tr>
-            <td>Tempat Lahir : </td>
-            <td><input type="text" name="tempat_lahir" require="require"></td>
-        </tr>
-        <tr>
-            <td>Tanggal Lahir : </td>
-            <td><input type="date" name="tanggal_lahir" require="require"></td>
-        </tr>
-        
-    
-        <tr>
-            <td><label for="penddidikan">Pendidikan : </label></td>
-            <td>
+    <div class="form-group">
+      <label for="nik">NIK:</label>
+      <input type="text" class="form-control" id="nik" placeholder="Masukan NIK" name="nik" require="require" value="{{ $kependudukan->nik }}">
+    </div>
+    <div class="form-group">
+      <label for="nama">Nama:</label>
+      <input type="text" class="form-control" id="nama" placeholder="Masukan Nama" name="nama" require="require">
+    </div>
+    <div class="form-group">
+      <label for="alamat">Alamat:</label>
+      <input type="text" class="form-control" id="alamat" placeholder="Masukan Alamat" name="alamat" require="require">
+    </div>
+    <div class="form-group">
+      <label for="tempat_lahir">Tempat Lahir:</label>
+      <input type="text" class="form-control" id="tempat_lahir" placeholder="Masukan Tempat Lahir" name="tempat_lahir" require="require">
+    </div>
+    <div class="form-group">
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input type="date" class="form-control" id="tanggal_lahir" placeholder="Masukan Tanggal Lahir" name="tanggal_lahir" require="require">
+    </div>
+    <div class="form-group">
+    <label for="penddidikan">Pendidikan : </label>
+            
             <select name="pendidikan" id="pendidikan">
             <option value="S-3">S-3</option>
             <option value="S-2">S-2</option>
@@ -52,22 +49,34 @@
             <option value="SMP">SMP</option>
             <option value="SD">SD</option>
             </select>
-            </td>
-        </tr>
-    </table>
+            
+    </div>
             <p>Agama : </p>
-            <input type="radio" id="islam" name="agama" value="Islam" require="require">
-            <label for="islam">Islam</label>
-            <input type="radio" id="kristen" name="agama" value="Kristen" require="require">
-            <label for="kristen">Kristen</label>
-            <input type="radio" id="katholik" name="agama" value="Katholik" require="require">
-            <label for="katholik">Katholik</label>
-            <input type="radio" id="hindu" name="agama" value="Hindu" require="require">
-            <label for="hindu">Hindu</label>
-            <input type="radio" id="budha" name="agama" value="Budha" require="require">
-            <label for="budha">Budha</label>
-            <input type="radio" id="konghucu" name="agama" value="Konghucu" require="require">
-            <label for="konghucu">Konghucu</label><br><br>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio1" name="agama" value="Islam" checked>
+              <label class="form-check-label" for="radio1">Islam</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio2" name="agama" value="Kristen">
+              <label class="form-check-label" for="radio2">Kristen</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio3" name="agama" value="Katholik">
+              <label class="form-check-label" for="radio3">Katholik</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio4" name="agama" value="Hindu">
+              <label class="form-check-label" for="radio4">Hindu</label>
+            </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio5" name="agama" value="Buddha">
+                <label class="form-check-label" for="radio5">Buddha</label>
+                </div>
+              <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio6" name="agama" value="Konghucu">
+              <label class="form-check-label" for="radio6">Konghucu</label>
+            </div><br>
+           
     <input type="submit" value="Simpan Data" class="btn btn-primary">
 </form>
 @endforeach
