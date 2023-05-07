@@ -23,6 +23,7 @@
                 <th>Alamat</th>
                 <th>Tempat Lahir</th>
                 <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
                 <th>Agama</th>
                 <th>Pendidikan</th>
                 <th>Opsi</th>
@@ -35,6 +36,7 @@
                 <td>{{ $kependudukan->alamat }}</td>
                 <td>{{ $kependudukan->tempat_lahir }}</td>
                 <td>{{ $kependudukan->tanggal_lahir }}</td>
+                <td>{{ $kependudukan->jenis_kelamin }}</td>
                 <td>{{ $kependudukan->agama }}</td>
                 <td>{{ $kependudukan->pendidikan }}</td>
                 <td>

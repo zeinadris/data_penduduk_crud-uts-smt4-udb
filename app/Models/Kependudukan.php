@@ -16,6 +16,7 @@ class Kependudukan extends Model
         'alamat',
         'tempat_lahir',
         'tanggal_lahir',
+        'jenis_kelamin',
         'agama',
         'pendidikan'
     ];

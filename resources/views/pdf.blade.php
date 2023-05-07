@@ -9,16 +9,18 @@
 <body>
 <center>
         <h5>Membuat Laporan PDF dengan DOMPDF Laravel</h5>
-        <h6>Data Penduduk Republik Uganda</h6>
+        <h6>Data Penduduk Republik Irlandia</h6>
     </center>
 
     <table border='1'>
         <tr>
+            <th>No</th>
             <th>NIK</th>
             <th>Nama</th>
             <th>Alamat</th>
             <th>Tempat Lahir</th>
             <th>Tanggal Lahir</th>
+            <th>Jenis Kelamin</th>
             <th>Agama</th>
             <th>Pendidikan</th>
         </tr>
@@ -31,6 +33,7 @@
             <td>{{ $penduduk->alamat }}</td>
             <td>{{ $penduduk->tempat_lahir }}</td>
             <td>{{ $penduduk->tanggal_lahir }}</td>
+            <td>{{ $penduduk->jenis_kelamin }}</td>
             <td>{{ $penduduk->agama }}</td>
             <td>{{ $penduduk->pendidikan }}</td>
         </tr>

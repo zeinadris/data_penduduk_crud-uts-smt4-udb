@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="card-body">
-          Website Data Peenduduk Republik Irlandia
+          Website Data Penduduk Republik Irlandia
         </div>
         <!-- /.card-body -->
         <div class="card-footer">

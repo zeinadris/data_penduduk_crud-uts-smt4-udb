@@ -51,7 +51,17 @@
             </select>
             
     </div>
-            <p>Agama : </p>
+    <label for="">Jenis Kelamin : </label>
+    <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio7" name="jenis_kelamin" value="Laki - laki" checked>
+              <label class="form-check-label" for="radio7">Laki - laki</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio8" name="jenis_kelamin" value="Perempuan">
+              <label class="form-check-label" for="radio8">Perempuan</label>
+            </div><br>
+
+            <label for="">Agama : </label>
             <div class="form-check">
               <input type="radio" class="form-check-input" id="radio1" name="agama" value="Islam" checked>
               <label class="form-check-label" for="radio1">Islam</label>
